@@ -1,0 +1,130 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*************************************************** Cards ***************************************************/
+
+.container {
+    height: 100vh;
+    background-color: var(--Very-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 450px;
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+.section-img {
+    margin: 10px 0 0 -135px;
+    height: 35px;
+}
+
+/*************************************************** Buttons ***************************************************/
+
+.cta-button {
+    background-color: var(--Very-light-gray);
+    cursor: pointer;
+    border: 2px solid var(--Very-light-gray);
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-left: -60px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: var(--Transparent-white);
+}
+
+.sedan-button {
+    color: var(--Bright-orange);
+}
+
+.suvs-button {
+    color: var(--Dark-cyan);
+}
+
+.luxury-button {
+    color: var(--Very-dark-cyan);
+}
+
+/*************************************************** Text ***************************************************/
+
+h2 {
+    /* margin-bottom: 100px; */
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--Very-light-gray);
+    font-size: 2.4rem;
+    padding: 35px 100px 0 0;
+}
+
+p {
+    text-align: left;
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.7;
+    padding: 10% 15% 30% 15%;
+}
+
+/* This line shifts the title to the left otherwise it has extra space on the left side.  */
+
+.suv-title {
+    padding-right: 130px;
+}
+
+/*************************************************** @media ***************************************************/
+
+@media (max-width:790px) {
+    .cards {
+        flex-direction: column;
+        height: auto;
+    }
+    .card {
+        height: 450px;
+    }
+    .sedans {
+        margin-top: 800px;
+        border-radius: 8px 8px 0 0;
+    }
+}
