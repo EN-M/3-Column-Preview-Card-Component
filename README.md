@@ -15,3 +15,5 @@ I couldn't find any real solution, so I tried to hide it using some margin-top.
 so any help to fix these problems and improving the overall code is highly appreciated.
 
 -17 April 2021
+
+update1:fixed the disappearing div problem. it was caused by container height set to 100vh.
